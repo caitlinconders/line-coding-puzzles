@@ -1,0 +1,26 @@
+# This function calculates body mass index (bmi = weight / height2).
+
+# if bmi <= 18.5 return "Underweight"
+
+# if bmi <= 25.0 return "Normal"
+
+# if bmi <= 30.0 return "Overweight"
+
+# if bmi > 30 return "Obese"
+
+def bmi(weight, height):
+    value = weight / height**2
+    if value <= 18.5:
+        return ('Underweight')
+    elif value <= 25:
+        return ('Normal')
+    elif value <= 30:
+        return ('Overweight')
+    else:
+        return ('Obese')
+       
+
+# This function takes 2 positive integers in form of a string as an input, and outputs the sum (also as a string).
+
+def sum_str(a, b):
+    return str(int(a or 0) + int(b or 0))
